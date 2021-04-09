@@ -3,15 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {SigninModuleModule} from './signin-module/signin-module.module';
-import { LoginSystemComponent } from './signin-module/login-system/login-system.component';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginSystemComponent,
+    
   
     
   ],
@@ -19,7 +18,7 @@ import { LoginSystemComponent } from './signin-module/login-system/login-system.
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SigninModuleModule
+  
    
   ],
   providers: [],
