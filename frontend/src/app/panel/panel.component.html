@@ -1,0 +1,32 @@
+<p>panel works!</p>
+<div>
+    <div style="margin-top:20px;"></div>
+
+      <div>
+          <!--Email Column -->
+          <ng-container matColumnDef="email">
+            <mat-header-cell *matHeaderCellDef> First Name </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.email}} </mat-cell>
+          </ng-container>
+
+         
+          <!-- Edit Column -->
+          <ng-container matColumnDef="Edit">
+            <mat-header-cell *matHeaderCellDef> Edit </mat-header-cell>
+            <mat-cell *matCellDef="let element"><a (click)="edit(element)"
+                style="color:red;cursor: pointer;">Edit</a> </mat-cell>
+          </ng-container>
+
+          <!-- Delete Column -->
+          <ng-container matColumnDef="Delete">
+            <mat-header-cell *matHeaderCellDef> Delete </mat-header-cell>
+            <mat-cell *matCellDef="let element"><a (click)="delete(element._id)"
+                style="color:red;cursor: pointer;">Delete</a> </mat-cell>
+          </ng-container>
+
+
+      </div>
+
+
+
+</div>
